@@ -23,12 +23,6 @@ def retournerSixPlusX(x):
 def retournerYPlusX(x, y):
     return y + x
 
-retournerSixPlusTrois()
-retournerSixPlusX()
-print("Qui vole un" + retournerSixPlusTrois() + "Vole un boeuf")
-
-print("Bonjour world !")
-
 #Exercices Maison
 
 # add(x, y)
