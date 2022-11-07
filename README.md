@@ -1,1 +1,1 @@
-# Pierre Feuille Ciseaux en FLARP
+# Pierre Feuille Ciseaux en LARP
