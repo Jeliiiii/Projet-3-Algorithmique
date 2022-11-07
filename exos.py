@@ -15,7 +15,17 @@ part12 = ((365 * 3) / (4 - (12 - 8)) * (rh) > r) #f
 part22 = (e * s < r) #f
 
 def retournerSixPlusTrois():
-    6 + 3
+    return 6 + 3
+
+def retournerSixPlusX(x):
+    return 6 + x
+
+def retournerYPlusX(x, y):
+    return y + x
+
+retournerSixPlusTrois()
+retournerSixPlusX()
+print("Qui vole un" + retournerSixPlusTrois() + "Vole un boeuf")
 
 print("Bonjour world !")
 # FIN
