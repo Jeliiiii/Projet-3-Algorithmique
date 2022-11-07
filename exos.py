@@ -12,6 +12,10 @@ part2 = (e * s < r) #f
 assertionFinale2 = ((365 * 3) / (4 - (12 - 8)) * (rh) > r) == (e * s < r)
 
 part12 = ((365 * 3) / (4 - (12 - 8)) * (rh) > r) #f
-part22 = (e * s < r) #t
+part22 = (e * s < r) #f
 
+def retournerSixPlusTrois():
+    6 + 3
+
+print("Bonjour world !")
 # FIN
