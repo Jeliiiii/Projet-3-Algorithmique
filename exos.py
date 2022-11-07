@@ -28,4 +28,14 @@ retournerSixPlusX()
 print("Qui vole un" + retournerSixPlusTrois() + "Vole un boeuf")
 
 print("Bonjour world !")
+
+#Exercices Maison
+
+# add(x, y)
+# sub(x, y)
+# multiply(x, y)
+# divide(x, y)
+# modulo(x, y)
+# SalaireNet(Brut, Coefficient)
+# SalaireParSeconde(SalaireHoraire, HeureParJourOuvré, NbJourOuvréParAn)
 # FIN
