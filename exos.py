@@ -48,8 +48,18 @@ def retournerXMultiY(x, y):
 
 
 # divide(x, y)
+#Définir une fonction diviser
 def retournerXDivY(x, y):
-    return x / y
+    #Si y est égale à 0
+    if (y == 0) :
+        #Alors afficher "Division par 0 impossible"
+        print("Division par 0 impossible")
+        #retourner vide
+        return
+    #Sinon
+    else :
+        #Retourner x diviser par y
+        return x / y
 
 
 
@@ -95,4 +105,31 @@ def retournerSalparSec(salHoraire, HeureJour, Jour):
     nbsecondeparan = 365 * 24 * 3600
     #Je pose et retourne la division
     return SalAnnuel / nbsecondeparan
+
+def input():
+    #Renvoie un caractère de type string au hasard
+
+#Exercice mini jeu
+
+#Faire un mini jeu qui affiche un message lorsque input renvoie le bon caractère
+#Le caractère doit être paramétrable
+#Debut
+    #Définir le caractère à touver
+    lettre = str(input("Définissez votre caractère à trouver"))
+
+    #Initializer un compteur
+    compteur = 0
+
+    #Vérifier le caractère renvoyé par input tant que la valeur envoyée est différente de la valeur recherchée
+    while input() != lettre:
+        #Incrémenter le compteur
+        compteur = compteur + 1
+    else :
+        #Afficher un message disant que la lettre a été touvée
+        print("Bravo, vous avezz trouvé la lettre recherchée")
+        #Afficher le nombre de passage dans la boucle pour y arriver
+        print(compteur)
+
+    #Vider le compteur
+    compteur = 0
 # FIN
