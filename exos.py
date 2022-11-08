@@ -26,10 +26,32 @@ def retournerYPlusX(x, y):
 #Exercices Maison
 
 # add(x, y)
+def retournerXPlusY(x, y):
+    return x + y 
+
 # sub(x, y)
+def retournerXMoinsY(x, y):
+    return x - y
+
 # multiply(x, y)
+def retournerXMultiY(x, y):
+    return x * y
+
 # divide(x, y)
+def retournerXDivY(x, y):
+    return x / y
+
 # modulo(x, y)
+def retournerXModuloY(x, y):
+    return x % y
+
 # SalaireNet(Brut, Coefficient)
+def retournerBrutNetCoef(Brut, Coefficient):
+    return Brut * Coefficient
+
 # SalaireParSeconde(SalaireHoraire, HeureParJourOuvré, NbJourOuvréParAn)
+def retournerSalparSec(salHoraire, HeureJour, Jour):
+    SalAnnuel = salHoraire * HeureJour * Jour
+    nbsecondeparan = 365 * 24 * 3600
+    return SalAnnuel / nbsecondeparan
 # FIN
