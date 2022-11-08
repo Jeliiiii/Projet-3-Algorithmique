@@ -26,31 +26,66 @@ def retournerSixPlusX(x):
 def retournerYPlusX(x, y):
     return y + x
 
+
 #Exercices Maison
 
 # add(x, y)
 def retournerXPlusY(x, y):
     return x + y 
 
+
+
 # sub(x, y)
 def retournerXMoinsY(x, y):
     return x - y
+
+
 
 # multiply(x, y)
 def retournerXMultiY(x, y):
     return x * y
 
+
+
 # divide(x, y)
 def retournerXDivY(x, y):
     return x / y
+
+
 
 # modulo(x, y)
 def retournerXModuloY(x, y):
     return x % y
 
+
+
 # SalaireNet(Brut, Coefficient)
-def retournerBrutNetCoef(Brut, Coefficient):
-    return Brut * Coefficient
+#Définir une fonction withdrawFees qui retire unpourcenetage à un total en fonction d'un total et d'un pourcentage
+def withdrawFees(total, percent):
+    #Définir Fees en fonction d'un total et d'un pourcentage
+    fees = total * (percent / 100)
+    #soustraire Fess au total
+    result = total - fees
+    #retourner la valeur obtenue
+    return result
+
+#Definir uen fonction qui retourne le salaire net en fonction du salaire brut (float) et du secteur d'activité (isPublic > Boleen)
+def CalculBrutEnNet(salaireBrut, isPublic):
+    #Si je suis un travailleur du secteur public 
+    if isPublic:
+        #Alors je soustrais 15% de mon salaire Brut pour obtenir mon salaire Net public
+        #salaireNet = salaireBrut - (salaireBrut * (85/100))
+        salaireNet = withdrawFees(salaireBrut, 15)
+    #Sinon : Je suis un travailleur privé
+    else:
+        #Alors je soustrais 23% de mon salaire Brut pour obtenir mon salaire Net Privé
+        #salaireNet = salaireBrut - (salaireBrut * (77/100))
+        salaireNet = withdrawFees(salaireBrut, 23)
+    
+    #Retourner salaireNet
+    return salaireNet
+
+
 
 # SalaireParSeconde(SalaireHoraire, HeureParJourOuvré, NbJourOuvréParAn)
 def retournerSalparSec(salHoraire, HeureJour, Jour):
