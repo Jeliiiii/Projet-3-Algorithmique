@@ -14,12 +14,15 @@ assertionFinale2 = ((365 * 3) / (4 - (12 - 8)) * (rh) > r) == (e * s < r)
 part12 = ((365 * 3) / (4 - (12 - 8)) * (rh) > r) #f
 part22 = (e * s < r) #f
 
+# add(6, 3)
 def retournerSixPlusTrois():
     return 6 + 3
 
+# add(6, x)
 def retournerSixPlusX(x):
     return 6 + x
 
+# add(y, x)
 def retournerYPlusX(x, y):
     return y + x
 
