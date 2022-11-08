@@ -54,7 +54,10 @@ def retournerBrutNetCoef(Brut, Coefficient):
 
 # SalaireParSeconde(SalaireHoraire, HeureParJourOuvré, NbJourOuvréParAn)
 def retournerSalparSec(salHoraire, HeureJour, Jour):
+    #Calculer mon salaire annuel
     SalAnnuel = salHoraire * HeureJour * Jour
+    #Calculer le nombre de seconde dans une année
     nbsecondeparan = 365 * 24 * 3600
+    #Je pose et retourne la division
     return SalAnnuel / nbsecondeparan
 # FIN
