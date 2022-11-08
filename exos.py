@@ -106,30 +106,32 @@ def retournerSalparSec(salHoraire, HeureJour, Jour):
     #Je pose et retourne la division
     return SalAnnuel / nbsecondeparan
 
-def input():
+#def input():
     #Renvoie un caractère de type string au hasard
+#FIN
 
 #Exercice mini jeu
 
 #Faire un mini jeu qui affiche un message lorsque input renvoie le bon caractère
 #Le caractère doit être paramétrable
-#Debut
-    #Définir le caractère à touver
-    lettre = str(input("Définissez votre caractère à trouver"))
 
-    #Initializer un compteur
-    compteur = 0
+#DEBUT
+#Définir le caractère à touver
+caractere = str(input("Définissez votre caractère à trouver"))
 
-    #Vérifier le caractère renvoyé par input tant que la valeur envoyée est différente de la valeur recherchée
-    while input() != lettre:
-        #Incrémenter le compteur
-        compteur = compteur + 1
-    else :
-        #Afficher un message disant que la lettre a été touvée
-        print("Bravo, vous avezz trouvé la lettre recherchée")
-        #Afficher le nombre de passage dans la boucle pour y arriver
-        print(compteur)
+#Initializer un compteur
+compteur = 0
 
-    #Vider le compteur
-    compteur = 0
+#Vérifier le caractère renvoyé par input tant que la valeur envoyée est différente de la valeur recherchée
+while input() != caractere:
+    #Incrémenter le compteur
+    compteur = compteur + 1
+else :
+    #Afficher un message disant que la lettre a été touvée
+    print("Bravo, vous avezz trouvé la lettre recherchée")
+    #Afficher le nombre de passage dans la boucle pour y arriver
+    print(compteur)
+
+#Vider le compteur
+compteur = 0
 # FIN
