@@ -15,10 +15,15 @@
     #Executer la fonction randomPFC
     #retourner la fonction PFC(1 = "Pierre", 2 = "Feuille", 3 = "Ciseaux")
 
+#Si player PFC écrit "info"
+    #Alors afficher "Pour arrêter la partie il faut écrire "stop", 1 = Pierre, 2 = Feuille, 3 = Ciseaux
+    #Afficher le nombre de partie, de win et de Loose
+
 #Initialiser le pierre feuille ciseaux
-    #Afficher les règles du jeux
+    #Afficher les règles du jeux et les différentes action possible afin d'avoir accès aux aides et performance du joueur
     #Demander au joueur si il est prêt par oui ou non (o / n)
     #Si le joueur est prêt
+    #Afficher qu'il démarre une nouvelle partie, que pour arrêter la partie il faut écrire "stop" et que 1 = Pierre, 2 = Feuille, 3 = Ciseaux
         #Définir une fonction "ratioWL"
             #Win = 0
             #Loose = 0
@@ -27,7 +32,6 @@
         #Initialiser et lancer une partie
         #retourner la fonction PFC
         #Tant que le playerPFC n'écrit pas "stop"
-        #Afficher qu'il démarre une nouvelle partie, que pour arrêter la partie il faut écrire "stop" et que 1 = Pierre, 2 = Feuille, 3 = Ciseaux
             #Si playerPFC rentre une valeur comprise entre 1 et 3
                 #Alors executer ordiPFC
                 #Afficher le nombre de partie, de win et de Loose
