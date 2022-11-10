@@ -32,43 +32,43 @@
                 #Alors utiliser ordiPFC
                 #Si playerPFC choisit Pierre et que la réponse de ordiPFC est Pierre
                     #Alors afficher "Joueur a gagné"
-                    #Ajouté 1 à Win dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Win dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                     #Afficher "Vous êtes actuellement à " + str(compteur) + "parties et votre ratio victoire/défaite est de " + str(ratioWL) + "."
                 #Sinon si playerPFC choisit Pierre et que la réponse de ordiPFC est Feuille
                     #Alors afficher "Ordi a gagné"
-                    #Ajouté 1 à Loose dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Loose dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Pierre et que la réposne de ordiPFC est Pierre 
                     #Alors afficher "Égalité, dommage..."
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Pierre
                     #Alors afficher "Joueur a gagné"
-                    #Ajouté 1 à Win dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Win dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Ciseaux
                     #Alors afficher "Ordi a gagné"
-                    #Ajouté 1 à Loose dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Loose dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Feuille
                     #Alors afficher "Égalité dommage..."
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Feuille
                     #Alors afficher "Joueur a gagné"
-                    #Ajouté 1 à Win dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Win dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Pierre
                     #Alors afficher "Ordi a gagné"
-                    #Ajouté 1 à Loose dans ratioWL
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 à Loose dans ratioWL
+                    #Ajouter 1 dans compteurPartie
                 #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Ciseaux
                     #Alors afficher "Égalité dommage..."
-                    #Ajouté 1 dans compteurPartie
+                    #Ajouter 1 dans compteurPartie
             #Sinon
                 #Afficher message d'erreur "Choisir un nombre valide comprit entre 1 et 3"
         #Afficher "Vous avez quitté le jeu, vous avez fait " + str(compteur) + "parties et votre ratio victoire/défaite est de " + str(ratioWL) + "."
         #Réinitialiser PFCplayer 
     #Sinon
         #Stopper le programme
-        
+
 #FIN
