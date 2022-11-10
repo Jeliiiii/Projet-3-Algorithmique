@@ -2,18 +2,18 @@
 
 #Définir la fonction PFC 
     #Si PFC = 1
-        #Alors PFC = Pierre
+        #Alors retourner "Pierre"
     #Sinon si PFC = 2
-        #Alors PFC = Feuille
+        #Alors retourner "Feuille"
     #Sinon si PFC = 3
-        #Alors PFC = Ciseaux
+        #Alors retourner "Ciseaux"
 
 #Définir la fonction playerPFC
 
 #Définir la fonction ordiPFC
     #Admettre la fonction randomPFC qui choisit aléatoirement un chiffre entre 1 et 3
-    #Utiliser la fonction randomPFC
-    #retourner la fonction PFC(1 = Pierre, 2 = Feuille, 3 = Ciseaux)
+    #Executer la fonction randomPFC
+    #retourner la fonction PFC(1 = "Pierre", 2 = "Feuille", 3 = "Ciseaux")
 
 #Initialiser le pierre feuille ciseaux
     #Afficher les règles du jeux
@@ -26,42 +26,42 @@
         #Initialiser compteurPartie qui est égal à 0
         #Initialiser et lancer une partie
         #retourner la fonction PFC
-        #Afficher "1 = Pierre, 2 = Feuille, 3 = Ciseaux"
         #Tant que le playerPFC n'écrit pas "stop"
+        #Afficher qu'il démarre une nouvelle partie, que pour arrêter la partie il faut écrire "stop" et que 1 = Pierre, 2 = Feuille, 3 = Ciseaux
             #Si playerPFC rentre une valeur comprise entre 1 et 3
-                #Alors utiliser ordiPFC
+                #Alors executer ordiPFC
                 #Afficher le nombre de partie, de win et de Loose
-                #Si playerPFC choisit Pierre et que la réponse de ordiPFC est Pierre
+                #Si playerPFC choisit "Pierre" et que la réponse de ordiPFC est "Pierre"
                     #Alors afficher "Joueur a gagné"
                     #Ajouter 1 à Win dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Pierre et que la réponse de ordiPFC est Feuille
+                #Sinon si playerPFC choisit "Pierre" et que la réponse de ordiPFC est "Feuille"
                     #Alors afficher "Ordi a gagné"
                     #Ajouter 1 à Loose dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Pierre et que la réposne de ordiPFC est Pierre 
+                #Sinon si playerPFC choisit "Pierre" et que la réposne de ordiPFC est "Pierre" 
                     #Alors afficher "Égalité, dommage..."
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Pierre
+                #Sinon si playerPFC choisit "Feuille" et que la réponse de ordiPFC est "Pierre"
                     #Alors afficher "Joueur a gagné"
                     #Ajouter 1 à Win dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Ciseaux
+                #Sinon si playerPFC choisit "Feuille" et que la réponse de ordiPFC est "Ciseaux"
                     #Alors afficher "Ordi a gagné"
                     #Ajouter 1 à Loose dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Feuille et que la réponse de ordiPFC est Feuille
+                #Sinon si playerPFC choisit "Feuille" et que la réponse de ordiPFC est "Feuille"
                     #Alors afficher "Égalité dommage..."
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Feuille
+                #Sinon si playerPFC choisit "Ciseaux" et que la réponse de ordiPFC est "Feuille"
                     #Alors afficher "Joueur a gagné"
                     #Ajouter 1 à Win dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Pierre
+                #Sinon si playerPFC choisit "Ciseaux" et que la réponse de ordiPFC est "Pierre"
                     #Alors afficher "Ordi a gagné"
                     #Ajouter 1 à Loose dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                #Sinon si playerPFC choisit Ciseaux et que la réponse de ordiPFC est Ciseaux
+                #Sinon si playerPFC choisit "Ciseaux" et que la réponse de ordiPFC est "Ciseaux"
                     #Alors afficher "Égalité dommage..."
                     #Ajouter 1 dans compteurPartie
             #Sinon
