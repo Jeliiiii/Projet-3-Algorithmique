@@ -31,7 +31,7 @@
             #Si playerPFC rentre une valeur comprise entre 1 et 3
                 #Alors executer ordiPFC
                 #Afficher le nombre de partie, de win et de Loose
-                #Si playerPFC choisit "Pierre" et que la réponse de ordiPFC est "Pierre"
+                #Si playerPFC choisit "Pierre" et que la réponse de ordiPFC est "Ciseaux"
                     #Alors afficher "Joueur a gagné"
                     #Ajouter 1 à Win dans ratioWL
                     #Ajouter 1 dans compteurPartie
