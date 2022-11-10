@@ -22,7 +22,7 @@
         #Définir une fonction "ratioWL"
             #Win = 0
             #Loose = 0
-            #Afficher "(W = " + str(Win) + "/L = " + str(Loose) + ")"
+            #Afficher les wins et les looses sous forme compacté
         #Initialiser compteurPartie qui est égal à 0
         #Initialiser et lancer une partie
         #retourner la fonction PFC
@@ -30,11 +30,11 @@
         #Tant que le playerPFC n'écrit pas "stop"
             #Si playerPFC rentre une valeur comprise entre 1 et 3
                 #Alors utiliser ordiPFC
+                #Afficher le nombre de partie, de win et de Loose
                 #Si playerPFC choisit Pierre et que la réponse de ordiPFC est Pierre
                     #Alors afficher "Joueur a gagné"
                     #Ajouter 1 à Win dans ratioWL
                     #Ajouter 1 dans compteurPartie
-                    #Afficher "Vous êtes actuellement à " + str(compteur) + "parties et votre ratio victoire/défaite est de " + str(ratioWL) + "."
                 #Sinon si playerPFC choisit Pierre et que la réponse de ordiPFC est Feuille
                     #Alors afficher "Ordi a gagné"
                     #Ajouter 1 à Loose dans ratioWL
@@ -66,7 +66,7 @@
                     #Ajouter 1 dans compteurPartie
             #Sinon
                 #Afficher message d'erreur "Choisir un nombre valide comprit entre 1 et 3"
-        #Afficher "Vous avez quitté le jeu, vous avez fait " + str(compteur) + "parties et votre ratio victoire/défaite est de " + str(ratioWL) + "."
+        #Afficher un message d'adieu, le nombre de partie final, ainsi que les win et les Loose
         #Réinitialiser PFCplayer 
     #Sinon
         #Stopper le programme
