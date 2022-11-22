@@ -122,29 +122,12 @@ def morpion():
     #Demander à joueur 1 son pseudo
     joueur1 = input("Joueur 1, choisissez votre pseudo : \n")
     #Demander à joueur 2 son pseudo
-    joueur2 = input("Joueur 2, choisissez votre pseudo : \n")
+    Ordi = "Ordi"
+    print("Vous allez jouer contre l'ordi !")
     #Joueur 1 a les croix
     joueur1coup = "X"
     #Joueur 2 à les ronds
-    joueur2coup = "O"
-    #Créer une fonction joueurChoix qui choisira aléatoirement le joueur qui commence
-    joueurchoix = randint(1, 2)
-    #Si joueurChoix = 1
-    if joueurchoix == 1:
-        #Alors afficher joueur 1 commence
-        print(joueur1 + ", commence \n")
-        #Le tour est donc pour le joueur 1
-        TourJoueur = joueur1
-        #Alors coup joueur est égal à joueur1coup
-        CoupJoueur = joueur1coup
-    #Sinon
-    else:
-        #Afficher joueur 2 commence
-        print(joueur2 + ", commence \n")
-        #Le tour est donc pour le joueur 2
-        TourJoueur = joueur2
-        #Alors coupJoueur = joueur2coup
-        CoupJoueur = joueur2coup
+    Ordicoup = "O"
     #Bon coup est égal à faux
     bonCoup = False
     #Joueur gagnant est égal à faux
@@ -184,9 +167,9 @@ def morpion():
         #Si coup joueur est égal à joueur1coup
         if CoupJoueur == joueur1coup:
             #Alors coupjoueur = joueur2coup
-            CoupJoueur = joueur2coup
+            CoupJoueur = Ordicoup
             #TourJoueur = joueur2
-            TourJoueur = joueur2
+            TourJoueur = Ordi
         #Sinon
         else :
             #CoupJoueur = joueur1coup 

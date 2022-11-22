@@ -157,10 +157,10 @@ def morpion():
         while bonCoup == False :
             #Afficher 'Au tour de + TourJoueur + "\n"
             print("Au Tour de " + TourJoueur + "\n")
-            #Prendre un élément au hasard dansX qui sera egale a int(entrer("Choisissez la ligne à modifier ( 0 ← Ligne 1 ; 1 ← Ligne 2 ; 2 ← Ligne 3)  \n"))
-            choixX = int(input("Choisissez la ligne à modifier ( 0 = Ligne 1 ; 1 = Ligne 2 ; 2 = Ligne 3) : \n"))
-            #Prendre un élément au hasard dansY qui sera egale a int(entrer("Choisissez la colonne à modifier ( 0 ← Colonne 1 ; 1 ← Colonne 2 ; 2 ← Colonne 3)  \n"))
-            choixY = int(input("Choisissez la colonne à modifier ( 0 = Colonne 1 ; 1 = Colonne 2 ; 2 = Colonne 3) : \n"))
+            #Prendre un élément au hasard dansX qui sera egale a int(entrer("Choisissez la ligne à modifier ( 1 ← Ligne 1 ; 2 ← Ligne 2 ; 3 ← Ligne 3)  \n"))
+            choixX = int(input("Choisissez la ligne à modifier ( 1 = Ligne 1 ; 2 = Ligne 2 ; 3 = Ligne 3) : \n")) - 1  
+            #Prendre un élément au hasard dansY qui sera egale a int(entrer("Choisissez la colonne à modifier ( 1 ← Colonne 1 ; 2 ← Colonne 2 ; 3 ← Colonne 3)  \n"))
+            choixY = int(input("Choisissez la colonne à modifier ( 1 = Colonne 1 ; 2 = Colonne 2 ; 3 = Colonne 3) : \n")) - 1
             #Si caseTab (tableJeu, prendre un élément au hasard dansX, prendre un élément au hasard dansY) est différent de vrai
             if caseTab(tableJeu, choixX, choixY) != True:
                 #Alors tableJeu [prendre un élément au hasard dansX][prendre un élément au hasard dansY] qui sera egale au coupJoueur
